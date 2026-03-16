@@ -179,7 +179,7 @@ export default function Home() {
               className={`text-4xl font-extrabold outline-none mb-8 p-3 rounded-lg border-2 transition-all w-full
                 ${darkMode 
                   ? 'bg-slate-800 border-slate-700 text-white placeholder:text-slate-700 focus:border-blue-500' 
-                  : 'bg-slate-50 border-slate-200 text-slate-900 placeholder:text-slate-200 focus:border-blue-400'
+                  : 'bg-slate-50 border-slate-200 text-slate-900 placeholder:text-slate-300 focus:border-blue-400'
                 }
                 ${(!podeEditar && idNotaAtiva) ? 'cursor-default border-transparent bg-transparent' : ''}`}
               value={titulo}
@@ -193,7 +193,7 @@ export default function Home() {
               className={`flex-1 outline-none resize-none p-6 rounded-xl border-2 transition-all w-full
                 ${darkMode 
                   ? 'bg-slate-800/50 border-slate-700 text-slate-300 placeholder:text-slate-800 focus:border-blue-500' 
-                  : 'bg-slate-50 border-slate-200 text-slate-600 placeholder:text-slate-300 focus:border-blue-400'
+                  : 'bg-slate-50 border-slate-200 text-slate-600 placeholder:text-slate-400 focus:border-blue-400'
                 }
                 ${(!podeEditar && idNotaAtiva) ? 'cursor-default border-transparent bg-transparent' : ''}`}
               value={conteudo}

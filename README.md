@@ -20,6 +20,4 @@ O **Fluxo de Ideias** é um caderno de notas digital minimalista e eficiente, pr
 
 ## 📦 Como rodar o projeto localmente
 
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/labellemodafemininalaranjalmg-eng/ideaflow.git](hhttps://labellemodafemininalaranjalmg-eng.github.io/ideaflow/)
+git clone [https://github.com/labellemodafemininalaranjalmg-eng/ideaflow.git](https://github.com/labellemodafemininalaranjalmg-eng.github.io/ideaflow/)

@@ -20,4 +20,4 @@ O **Fluxo de Ideias** é um caderno de notas digital minimalista e eficiente, pr
 
 ## 📦 Como rodar o projeto localmente
 
-git clone [https://github.com/labellemodafemininalaranjalmg-eng/ideaflow.git](https://github.com/labellemodafemininalaranjalmg-eng.github.io/ideaflow/)
+https://ideaflowvercel.vercel.app

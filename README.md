@@ -20,4 +20,4 @@ O **Fluxo de Ideias** é um caderno de notas digital minimalista e eficiente, pr
 
 ## 📦 Como rodar o projeto localmente
 Acesse o projeto online
-ideaflowvercel.vercel.app
+https://ideaflow-omega-seven.vercel.app/

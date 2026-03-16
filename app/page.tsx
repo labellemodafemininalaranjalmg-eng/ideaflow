@@ -64,8 +64,7 @@ export default function Home() {
   );
 
   return (
-    <main className={`flex h-screen font-sans transition-colors duration-300 ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'}`}>
-      
+<main className={`flex flex-col md:flex-row h-screen font-sans transition-colors duration-300 ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-slate-50 text-slate-900'}`}>      
       {/* FEEDBACK */}
       {mensagem && (
         <div className="fixed bottom-10 right-10 z-50 bg-blue-600 text-white px-6 py-3 rounded-xl shadow-xl">
@@ -74,8 +73,7 @@ export default function Home() {
       )}
 
       {/* SIDEBAR */}
-      <aside className={`w-64 border-r flex flex-col ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
-        <div className="p-6">
+<aside className={`w-full md:w-64 h-1/3 md:h-full border-b md:border-r flex flex-col ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>        <div className="p-6">
           <div className="flex items-center justify-between mb-6">
             <h1 className="text-xl font-bold text-blue-500">IdeaFlow</h1>
             <button onClick={() => setDarkMode(!darkMode)} className="p-2 hover:bg-slate-700 rounded-lg">
@@ -127,8 +125,7 @@ export default function Home() {
       </aside>
 
 {/* EDITOR */}
-      <section className={`flex-1 flex flex-col overflow-hidden ${darkMode ? 'bg-slate-900' : 'bg-white'}`}>
-        
+<section className={`flex-1 w-full flex flex-col overflow-hidden ${darkMode ? 'bg-slate-900' : 'bg-white'}`}>        
         {/* BARRA DE FERRAMENTAS - TAMANHO DA FONTE E BOTÃO DE EDIÇÃO */}
         <div className={`flex items-center justify-between px-8 py-3 border-b ${darkMode ? 'border-slate-800' : 'border-slate-100'}`}>
           <div className="flex items-center gap-4">
@@ -171,15 +168,14 @@ export default function Home() {
 
         {/* ÁREA DE CONTEÚDO CENTRALIZADA COM BORDAS REINTRODUZIDAS */}
         <div className="flex-1 overflow-y-auto">
-          <div className="max-w-3xl mx-auto px-10 py-12 flex flex-col min-h-full">
-            <input 
+<div className="max-w-3xl mx-auto px-4 md:px-10 py-6 md:py-12 flex flex-col min-h-full">            <input 
               type="text" 
               placeholder="Título" 
               readOnly={!podeEditar && !!idNotaAtiva}
               className={`text-4xl font-extrabold outline-none mb-8 p-3 rounded-lg border-2 transition-all w-full
                 ${darkMode 
                   ? 'bg-slate-800 border-slate-700 text-white placeholder:text-slate-700 focus:border-blue-500' 
-                  : 'bg-slate-50 border-slate-200 text-slate-900 placeholder:text-slate-300 focus:border-blue-400'
+                  : 'bg-slate-50 border-slate-200 text-slate-900 placeholder:text-slate-200 focus:border-blue-400'
                 }
                 ${(!podeEditar && idNotaAtiva) ? 'cursor-default border-transparent bg-transparent' : ''}`}
               value={titulo}
@@ -193,7 +189,7 @@ export default function Home() {
               className={`flex-1 outline-none resize-none p-6 rounded-xl border-2 transition-all w-full
                 ${darkMode 
                   ? 'bg-slate-800/50 border-slate-700 text-slate-300 placeholder:text-slate-800 focus:border-blue-500' 
-                  : 'bg-slate-50 border-slate-200 text-slate-600 placeholder:text-slate-400 focus:border-blue-400'
+                  : 'bg-slate-50 border-slate-200 text-slate-600 placeholder:text-slate-300 focus:border-blue-400'
                 }
                 ${(!podeEditar && idNotaAtiva) ? 'cursor-default border-transparent bg-transparent' : ''}`}
               value={conteudo}

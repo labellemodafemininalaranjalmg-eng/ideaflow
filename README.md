@@ -19,5 +19,10 @@ O **Fluxo de Ideias** é um caderno de notas digital minimalista e eficiente, pr
 - [LocalStorage API](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage) - Armazenamento de dados no cliente.
 
 ## 📦 Como rodar o projeto localmente
+<<<<<<< HEAD
 
 https://ideaflowvercel.vercel.app
+=======
+Acesse o projeto online
+https://ideaflow-omega-seven.vercel.app/
+>>>>>>> c0dfae648c527b7389b6175964aa32b9ff8716a6
